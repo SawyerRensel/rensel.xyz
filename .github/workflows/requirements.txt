@@ -1,0 +1,7 @@
+mkdocs-material
+mkdocs-material[imaging]
+mkdocs-git-authors-plugin
+mkdocs-open-in-new-tab
+mkdocs-pdf
+mkdocs-glightbox
+mkdocs-git-revision-date-localized-plugin

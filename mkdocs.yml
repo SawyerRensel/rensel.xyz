@@ -1,0 +1,188 @@
+site_name: Sawyer Rensel
+site_url: https://rensel.xyz
+repo_url: https://github.com/SawyerRensel/rensel.xyz
+site_description: "Personal website of Sawyer Rensel."
+site_author: "Sawyer Rensel"
+
+
+nav:
+  - Home: index.md
+
+
+theme:
+  name: material
+
+  # logo: assets/
+
+  favicon: 
+
+  font:
+    text: Inter
+    
+  custom_dir: docs/overrides
+
+  features:
+    - navigation.tabs
+    # - navigation.tabs.sticky
+    - navigation.sections
+    # - navigation.expand
+    - navigation.top
+    - navigation.path
+    - navigation.indexes
+    - navigation.footer
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+    - content.action.edit
+    # - content.action.view
+    - search.suggest
+    - search.highlight
+    - search.share
+    - announce.dismiss
+
+  palette:
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: default
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+      primary: custom
+      accent: grey
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: slate
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+      primary: custom
+      accent: grey
+  
+  icon:
+    tag:
+      srensel: material/account-circle
+
+      tutorial: custom_admonitions/vector-point
+      how-to: custom_admonitions/vector-line
+      reference: custom_admonitions/vector-triangle
+      explanation: custom_admonitions/vector-polygon
+      
+      draft: material/file-edit
+      deprecated: material/progress-alert
+      verified: material/check-decagram
+
+
+plugins:
+  - tags:
+  - blog:
+      blog_toc: true
+      authors_file: ".authors.yml"
+      post_url_format: "{file}"
+      blog_dir: 
+      post_dir: 
+  - search
+  - glightbox
+  - git-revision-date-localized:
+      enable_creation_date: true
+  - mkdocs-pdf
+  - open-in-new-tab
+  # - git-authors
+  - social
+  # - offline
+
+
+markdown_extensions:
+  - toc:
+      permalink: "#"
+      title: On this page
+      toc_depth: 3
+  - admonition
+  - admonition
+  - sane_lists
+  - def_list
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      auto_title: false
+  - pymdownx.keys
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+      clickable_checkbox: true
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      options:
+        custom_icons:
+          - docs/overrides/.icons
+  - pymdownx.snippets:
+      base_path: ["docs"]
+  - attr_list
+  - md_in_html
+  - footnotes
+  - meta
+
+extra:
+  version:
+    default: stable
+
+  status:
+    draft: Content may have some inaccuracies and is in-progress
+    deprecated: Content has some inaccuracies and is out-of-date
+    verified: Content is accurate and up-to-date
+
+  tags:
+    Draft: draft
+    Deprecated: deprecated
+    Verified: verified
+
+    Tutorial: tutorial
+    How-to: how-to
+    Reference: reference
+    Explanation: explanation
+
+    Sawyer Rensel: srensel
+    
+  analytics: 
+    provider: google
+    property: 
+    feedback:
+      title: Was this page helpful?
+      ratings:
+        - icon: material/emoticon-happy-outline
+          name: This page was helpful
+          data: 1
+          note: >-
+            Thanks for your feedback!
+        - icon: material/emoticon-sad-outline
+          name: This page could be improved
+          data: 0
+          note: >- 
+            Thanks for your feedback! 
+
+  social:
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/sawyerrensel  
+  
+  generator: true
+
+
+extra_css:
+  - stylesheets/extra.css
+  - stylesheets/neoteroi-mkdocs.css  
+
+
+extra_javascript:
+  - javascripts/feedback.js
+
+
+copyright: Copyright &copy; 2025 Sawyer Rensel
+
+
+docs_dir: docs
+# edit_uri: 
+site_dir: site

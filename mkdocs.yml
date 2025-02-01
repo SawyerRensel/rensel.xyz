@@ -1,20 +1,28 @@
 site_name: Sawyer Rensel
 site_url: https://rensel.xyz
-repo_url: https://github.com/SawyerRensel/rensel.xyz
-site_description: "Personal website of Sawyer Rensel."
+# repo_url: https://github.com/SawyerRensel/rensel.xyz
+site_description: "Personal website of Sawyer Rensel"
 site_author: "Sawyer Rensel"
 
 
 nav:
-  - Home: index.md
+  - HOME: index.md
+  - PROJECTS: 
+    - projects/index.md
+    - Transmogrifier: projects/transmogrifier.md
+  - COLLECTIONS: 
+    - collections/index.md
+  - MUSINGS: blog/index.md
+  - ABOUT: 
+    - about/index.md
 
 
 theme:
   name: material
 
-  # logo: assets/
+  logo: assets/profile.jpg
 
-  favicon: 
+  favicon: assets/profile.jpg
 
   font:
     text: Inter
@@ -33,7 +41,6 @@ theme:
     - content.tabs.link
     - content.code.annotation
     - content.code.copy
-    - content.action.edit
     # - content.action.view
     - search.suggest
     - search.highlight
@@ -82,8 +89,10 @@ plugins:
       post_dir: 
   - search
   - glightbox
-  - git-revision-date-localized:
-      enable_creation_date: true
+  # - git-revision-date-localized:
+  #     enable_creation_date: true
+  #     exclude:
+  #       - index.md
   - mkdocs-pdf
   - open-in-new-tab
   # - git-authors
@@ -150,19 +159,19 @@ extra:
   analytics: 
     provider: google
     property: 
-    feedback:
-      title: Was this page helpful?
-      ratings:
-        - icon: material/emoticon-happy-outline
-          name: This page was helpful
-          data: 1
-          note: >-
-            Thanks for your feedback!
-        - icon: material/emoticon-sad-outline
-          name: This page could be improved
-          data: 0
-          note: >- 
-            Thanks for your feedback! 
+    # feedback:
+    #   title: Was this page helpful?
+    #   ratings:
+    #     - icon: material/emoticon-happy-outline
+    #       name: This page was helpful
+    #       data: 1
+    #       note: >-
+    #         Thanks for your feedback!
+    #     - icon: material/emoticon-sad-outline
+    #       name: This page could be improved
+    #       data: 0
+    #       note: >- 
+    #         Thanks for your feedback! 
 
   social:
     - icon: fontawesome/brands/linkedin
@@ -173,7 +182,6 @@ extra:
 
 extra_css:
   - stylesheets/extra.css
-  - stylesheets/neoteroi-mkdocs.css  
 
 
 extra_javascript:
@@ -184,5 +192,4 @@ copyright: Copyright &copy; 2025 Sawyer Rensel
 
 
 docs_dir: docs
-# edit_uri: 
 site_dir: site

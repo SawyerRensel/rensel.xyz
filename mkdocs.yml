@@ -73,7 +73,7 @@ theme:
 
 
 plugins:
-  - tags:
+  - tags
   - blog:
       blog_toc: true
       authors_file: ".authors.yml"

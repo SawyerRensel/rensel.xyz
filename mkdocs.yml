@@ -10,9 +10,17 @@ nav:
   - PROJECTS: 
     - projects/index.md
     - Transmogrifier: projects/transmogrifier.md
-  - COLLECTIONS: 
-    - collections/index.md
-  - MUSINGS: blog/index.md
+  - RESOURCES: 
+    - resources/index.md
+    - Tutorials: 
+      - resources/tutorials/index.md
+    - How-to's: 
+      - resources/how_tos/index.md
+    - Reference: 
+      - resources/reference/index.md
+    - Explanation: 
+      - resources/explanation/index.md
+  - MUSINGS: musings/index.md
   - ABOUT: 
     - about/index.md
 
@@ -85,8 +93,13 @@ plugins:
       blog_toc: true
       authors_file: ".authors.yml"
       post_url_format: "{file}"
-      blog_dir: 
-      post_dir: 
+      blog_dir: musings
+      post_dir: musings/posts
+  - rss:
+      match_path: "musings/posts/.*"
+      date_from_meta:
+        as_creation: date.created
+        as_update: date.updated
   - search
   - glightbox
   # - git-revision-date-localized:
@@ -176,6 +189,8 @@ extra:
   social:
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/sawyerrensel  
+    - icon: fontawesome/brands/github
+      link: https://www.github.com/SawyerRensel
   
   generator: true
 
@@ -188,7 +203,8 @@ extra_javascript:
   - javascripts/feedback.js
 
 
-copyright: Copyright &copy; 2025 Sawyer Rensel
+copyright: Copyright &copy; 2025 Sawyer Rensel 
+# <br> Terms of Service | Privacy Policy | Cookie Policy
 
 
 docs_dir: docs

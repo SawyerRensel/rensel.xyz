@@ -5,3 +5,4 @@ mkdocs-open-in-new-tab
 mkdocs-pdf
 mkdocs-glightbox
 mkdocs-git-revision-date-localized-plugin
+mkdocs-rss-plugin

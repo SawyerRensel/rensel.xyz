@@ -17,7 +17,8 @@ nav:
     - How-to's: 
       - resources/how_tos/index.md
     - Reference: 
-      - resources/reference/index.md
+      - Awesome 3D: resources/reference/awesome_3d.md
+      # - Tags: resources
     - Explanation: 
       - resources/explanation/index.md
   - MUSINGS: musings/index.md
@@ -40,7 +41,7 @@ theme:
   features:
     - navigation.tabs
     # - navigation.tabs.sticky
-    - navigation.sections
+    # - navigation.sections
     # - navigation.expand
     - navigation.top
     - navigation.path
@@ -169,9 +170,9 @@ extra:
 
     Sawyer Rensel: srensel
     
-  analytics: 
-    provider: google
-    property: 
+  # analytics: 
+  #   provider: google
+  #   property: 
     # feedback:
     #   title: Was this page helpful?
     #   ratings:

@@ -57,6 +57,10 @@
 
 /* Search box */
 
+.md-search {
+  margin: 0px 1.2% 0px 0px;
+}
+
 .md-search__inner {
   float: right;
   width: 168px;

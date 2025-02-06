@@ -18,7 +18,7 @@ nav:
       - resources/how_tos/index.md
     - Reference: 
       - Awesome 3D: resources/reference/awesome_3d.md
-      # - Tags: resources
+      - Tags: resources/reference/tags.md
     - Explanation: 
       - resources/explanation/index.md
   - MUSINGS: musings/index.md

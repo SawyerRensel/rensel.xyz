@@ -17,7 +17,12 @@ nav:
     - How-to's: 
       - resources/how_tos/index.md
     - Reference: 
-      - resources/reference/index.md
+      - Advice: resources/reference/advice.md
+      - Book notes: resources/reference/book_notes.md
+      - CG Toolbox: resources/reference/cg_toolbox.md
+      - Glossary: resources/reference/glossary.md
+      - Guide to 3D with Blender: resources/reference/guide_to_3d_with_blender.md
+      - Tags: resources/reference/tags.md
     - Explanation: 
       - resources/explanation/index.md
   - MUSINGS: musings/index.md
@@ -40,7 +45,7 @@ theme:
   features:
     - navigation.tabs
     # - navigation.tabs.sticky
-    - navigation.sections
+    # - navigation.sections
     # - navigation.expand
     - navigation.top
     - navigation.path
@@ -169,9 +174,9 @@ extra:
 
     Sawyer Rensel: srensel
     
-  analytics: 
-    provider: google
-    property: 
+  # analytics: 
+  #   provider: google
+  #   property: 
     # feedback:
     #   title: Was this page helpful?
     #   ratings:

@@ -17,7 +17,11 @@ nav:
     - How-to's: 
       - resources/how_tos/index.md
     - Reference: 
-      - Awesome 3D: resources/reference/awesome_3d.md
+      - Advice: resources/reference/advice.md
+      - Book notes: resources/reference/book_notes.md
+      - CG Toolbox: resources/reference/cg_toolbox.md
+      - Glossary: resources/reference/glossary.md
+      - Guide to 3D with Blender: resources/reference/guide_to_3d_with_blender.md
       - Tags: resources/reference/tags.md
     - Explanation: 
       - resources/explanation/index.md

@@ -1,5 +1,5 @@
 ---
-title: COLLECTIONS
+title: RESOURCES
 ---
 
-# COLLECTIONS
+# RESOURCES
